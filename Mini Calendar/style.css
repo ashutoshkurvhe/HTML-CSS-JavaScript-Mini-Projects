@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont {
+  background-color: aliceblue;
+  box-shadow: 0 0 5px 0 gray;
+}
+
+.month, .day, .date, .year {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+.month {
+  font-size: 2.5em;
+  background-color: #6c94fb;
+  color: white;
+}
+
+.day {
+  font-size: 1.5em;
+  color: #6c94fb;
+}
+
+.date {
+  font-size: 4em;
+}
+
+.year {
+  font-size: 2em;
+  color: #6c94fb;
+}
