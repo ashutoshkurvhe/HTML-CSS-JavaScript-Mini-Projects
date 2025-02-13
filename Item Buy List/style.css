@@ -1,0 +1,115 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+/* Body Styles */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(196deg,rgb(181, 103, 245), rgb(101, 208, 244));
+}
+
+/* Container Styles */
+
+.cont {
+  width: 450px;
+  background-color: rgba(254, 253, 253, 0.847);
+  box-shadow: 0 0 10px 0 black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Input Area Styles */
+
+.input-area {
+  margin: 20px 0;
+}
+
+.item-input {
+  width: 250px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Input Placeholder Styles */
+
+.item-input:hover::placeholder,
+.item-input:hover::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.item-input:focus::placeholder,
+.item-input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* Add Button Styles */
+
+.add-btn {
+  width: 100px;
+  height: 47px;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #000;
+  color: white;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.add-btn:active {
+  scale: 0.9;
+}
+
+/* Item List Styles */
+
+.item-list {
+  list-style: none;
+}
+
+.item {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+/* Buy and Delete Button Styles */
+
+.buy-btn, .dlt-btn {
+  position: absolute;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.buy-btn {
+  right: 70px;
+  background-color: #5faefe;
+}
+
+.dlt-btn {
+  right: 0;
+  background-color: #fe5f5f;
+}
