@@ -2,7 +2,7 @@ Here are some mini-project ideas using HTML, CSS, and JavaScript with icons to m
 
 <h1>HTML CSS JavaScript Mini Projects</h1>
 
-<h2>🎯 Mini Project Ideas</h2>
+🎯 Mini Project Ideas
 
 
 
@@ -36,7 +36,7 @@ This is a simple yet interactive **[Project Name]** built using **HTML, CSS, and
 ## 📥 Installation & Setup  
 1. Clone the repository  
    ```bash
-   
+   https://github.com/ashutoshkurvhe/HTML-CSS-JavaScript-Mini-Projects.git
 Navigate to the project folder
 bash
 Copy
@@ -47,15 +47,8 @@ bash
 Copy
 Edit
 open index.html
+
 🏃 Usage
 Click on [Main Feature] to [describe action]
 Hover over [Element] to see [effect]
 Use [Button/Feature] to [describe action]
-
-
-
-
-📬 Contact
-👤 Your Name
-📧 Email: your-email@example.com
-🔗 GitHub: Your GitHub Profile
