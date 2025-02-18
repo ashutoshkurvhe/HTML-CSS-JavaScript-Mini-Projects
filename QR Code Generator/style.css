@@ -1,0 +1,96 @@
+/* Global Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #050505;
+    --secondary-color: #ba02cb;
+    --hover-color: #f264ff;
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 1.5em;
+    --box-shadow: 0 10px 15px 0 black;
+}
+
+body {
+    font-family: var(--font-family);
+    background: linear-gradient(25deg, rgb(95, 232, 252), var(--primary-color));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Styles */
+
+.cont{
+    height: 300px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+/* Inner Container Styles */
+
+.inner-cont{
+    padding: 20px;
+}
+
+.inner-cont label {
+    font-size: var(--font-size);
+    color: white;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+/* Input Styles */
+
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+
+.gen-btn {
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.gen-btn:hover {
+    background-color: var(--hover-color);
+}
+
+/* QR Code Box Styles */
+
+.qr-box {
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.qr-box img {
+    width: 100%;
+    height: 100%;
+}
