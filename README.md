@@ -13,7 +13,7 @@ Technologies Used 🛠
 Installation Steps ⚙️
 
 ## 📖 Description  
-This is a simple yet interactive **[Project Name]** built using **HTML, CSS, and JavaScript**. It enhances the user experience with icons and modern UI elements.  
+This is a simple yet interactive Projects built using **HTML, CSS, and JavaScript**. It enhances the user experience with icons and modern UI elements.  
 
 ## 🎯 Features  
 ✅ Responsive design for all devices  
