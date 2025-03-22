@@ -1,0 +1,186 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+/* Body Styles */
+
+body {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Container Styles */
+
+.container {
+  width: 500px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 5px 0 gray;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Styles */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Title Styles */
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3em;
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 2px;
+  background: linear-gradient(160deg, #fd02fd, #4303f2);
+  animation: title-border 2s linear 0s infinite backwards;
+}
+
+/* Sub-Title Styles */
+
+.sub-title {
+  font-weight: 600;
+}
+
+/* Result Styles */
+
+.result {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* Input Styles */
+
+input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px gray;
+  border-radius: 50px;
+  font-size: 1.2em;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+/* Calculate Button Styles */
+
+.calculate-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px gray;
+  background: linear-gradient(160deg, #fd02fd, #4303f2);
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.calculate-btn:hover {
+  opacity: 0.9;
+}
+
+.calculate-btn:active {
+  transform: scale(0.99);
+  color: #dfdddd;
+}
+
+/* Total Styles */
+
+.total {
+  font-size: 2.5em;
+  font-family: sans-serif;
+}
+
+/* Symbol Styles */
+
+.symbol {
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5px;
+}
+
+/* Keyframe Animation */
+
+@keyframes title-border {
+  0% {
+    width: 1px;
+  }
+  100% {
+    width: 100%;
+    background: linear-gradient(170deg, rgba(255, 255, 255, 0), #fd02fd, #4303f2, rgba(255, 255, 255, 0));
+  }
+}
+
+/* Responsive Design */
+
+/* Large Screens (Desktops) */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}
+
+/* Medium Screens (Laptops) */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 600px;
+  }
+}
+
+/* Small Screens (Tablets) */
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 400px;
+  }
+}
+
+/* Extra Small Screens (Mobiles) */
+
+@media (max-width: 479px) {
+  .container {
+    width: 300px;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .calculate-btn {
+    font-size: 1em;
+  }
+  .total {
+    font-size: 2em;
+  }
+}
