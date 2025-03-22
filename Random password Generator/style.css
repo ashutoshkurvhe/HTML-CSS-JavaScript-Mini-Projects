@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles for the Body */
+body {
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0a0a;
+}
+
+/* Container Styles */
+.cont {
+  padding: 100px;
+}
+
+/* Title Area Styles */
+.title-area {
+  font-size: 2em;
+}
+.title-area h1 {
+  color: aliceblue;
+}
+.title-area h1:nth-child(2) {
+  color: antiquewhite;
+}
+
+/* Generate Area Styles */
+.generate-area {
+  width: 350px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Shared Styles for Output and Generate Button */
+}
+.generate-area .output, .generate-area .generate-btn {
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+}
+
+/* Output Field Styles */
+.output {
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+}
+.output:focus {
+  transform: scale(0.99);
+}
+.output::-moz-placeholder {
+  font-size: 0.7em;
+}
+.output::placeholder {
+  font-size: 0.7em;
+}
+
+/* Generate Button Styles */
+.generate-btn {
+  width: 250px;
+  color: white;
+  background-color: #04c561;
+}
+
+/* Copy Button Styles */
+.copy-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2em;
+  color: #11a8e4;
+}
+
+/* Mutual Styles */
+.generate-area:active,
+.copy-btn:active,
+.output:focus {
+  transform: scale(0.99);
+  transition: scale 0.2s ease;
+}

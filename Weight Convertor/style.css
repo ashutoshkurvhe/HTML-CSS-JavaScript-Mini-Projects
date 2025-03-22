@@ -1,0 +1,55 @@
+/* Global Styles: */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles:*/
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Shared Font Family Styles: */
+.cont, .cont h1, input[type=number], label, p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* Container Styles:*/
+.cont {
+  background: linear-gradient(125deg,#597982,#159d99);
+  box-shadow: 0 0 5px 0 gray;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Container Heading Styles:*/
+.cont h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Number Input Styles: */
+input[type=number] {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  color: black;
+}
+
+/* Label Styles: */
+label {
+  margin-right: 10px;
+}
+
+/* Label and Paragraph Styles: */
+label, p {
+  font-size: 1.5em;
+}

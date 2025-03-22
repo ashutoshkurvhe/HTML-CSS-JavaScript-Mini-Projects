@@ -1,0 +1,253 @@
+.container{
+    perspective:1000px;
+    perspective-origin: 50% 50%;
+    font-family: 'fontawsome';
+    height: 100vh;
+    background: radial-gradient(gray ,black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cube{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: rotateX(135deg) rotateY(-217deg) rotateZ(-80deg);
+    animation: rotate 1s linear;
+
+}
+
+.roll-btn{
+    position: absolute;
+    top: 90%;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size:1.2em;
+    background: #fa1d5f;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 5px 0 #020202;
+    cursor: pointer;
+
+}
+
+.container .cube div{
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 10px;
+    height:100%;
+    width: 100%;
+    border: 1px solid rgb(5, 4, 4);
+    color: #010101;
+}
+.container .cube .front span{
+    font-size: 32px;
+    font-family: 'fontawesome';
+}
+
+
+.container .cube .front{
+    background:#fff;
+    transform: translateZ(100px);
+}
+
+.container .cube .back{
+    background:#fff;
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.container .cube .right{
+    background:#fff;
+    transform-origin: top right;
+    transform: rotateY(-270deg) translateX(100px);
+}
+
+.container .cube .left{
+    background:#fff;
+    transform-origin: center left;
+    transform: rotateY(270deg) translateX(-100px);
+}
+
+.container .cube .top{
+    background:#fff;
+    transform-origin: top center;
+    transform: rotateX(90deg) translateY(-100px);
+}
+
+.container .cube .bottom{
+    background:#fff;
+    transform-origin: bottom center;
+    transform: rotateX(-90deg) translateY(100px);
+}
+
+
+/* Dot Alignment */
+
+/*front Dot*/
+.container .cube .front span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*top Dot*/
+
+.container .cube .top span:nth-child(1){
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.container .cube .top span:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .cube .top span:nth-child(3){
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*back Dot*/
+
+.container .cube .back span:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .back span:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+/*bottom Dot*/
+
+.container .cube .bottom span:nth-child(1){
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .bottom span:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .bottom span:nth-child(3){
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .bottom span:nth-child(4){
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*right Dot*/
+
+.container .cube .right span:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .right span:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .right span:nth-child(3){
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .right span:nth-child(4){
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .right span:nth-child(5){
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*left Dot*/
+
+.container .cube .left span:nth-child(1){
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .left span:nth-child(2){
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .left span:nth-child(3){
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .left span:nth-child(4){
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .left span:nth-child(5){
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+.container .cube .left span:nth-child(6){
+    position: absolute;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: rotateX(126deg) rotateY(127deg) rotateZ(245deg);
+    }
+    100%{
+        transform: rotateX(170deg) rotateY(210deg) rotateZ(360deg);
+    }
+} 

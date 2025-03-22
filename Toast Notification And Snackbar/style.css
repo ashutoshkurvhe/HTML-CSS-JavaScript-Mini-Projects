@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.success-btn {
+  background: #4caf50;
+}
+
+.error-btn {
+  background: #f44336;
+}
+
+.invalid-btn {
+  background: #ff9800;
+}
+
+.toast-box {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  background: white;
+  padding: 15px 35px 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  animation: slideIn 0.3s ease forwards;
+}
+
+.toast.hide {
+  animation: slideOut 0.3s ease forwards;
+}
+
+.toast i {
+  font-size: 22px;
+}
+
+.toast.success i {
+  color: #4caf50;
+}
+
+.toast.error i {
+  color: #f44336;
+}
+
+.toast.invalid i {
+  color: #ff9800;
+}
+
+.toast .close {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
